@@ -13,9 +13,9 @@ $(call inherit-product, vendor/cyanogen/products/gsm.mk)
 PRODUCT_NAME := cyanogen_vision
 PRODUCT_BRAND := tmobile
 PRODUCT_DEVICE := vision
-PRODUCT_MODEL := T-Mobile G2
+PRODUCT_MODEL := HTC Vision
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_vision BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRG83 BUILD_FINGERPRINT=tmobile/htc_vision/vision/vision:2.2/FRF91/255798:user/release-keys PRIVATE_BUILD_DESC="1.19.531.1 CL255798 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_vision BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRG83 BUILD_FINGERPRINT=tmobile/htc_vision/vision/vision:2.2/FRF91/277427:user/release-keys PRIVATE_BUILD_DESC="1.22.531.8 CL277427 release-keys"
 
 # Build kernel
 #PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
@@ -23,7 +23,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_vision BUILD_ID=FRF91 BUILD_DIS
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_vision_defconfig
 
 # Include the Torch app
-PRODUCT_PACKAGES += Torch
+PRODUCT_PACKAGES += \
+    Torch \
+    FM
 
 # Extra Vision overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/vision
@@ -36,7 +38,7 @@ ifdef CYANOGEN_NIGHTLY
         ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-vision
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.1.0-RC0-vision
+        ro.modversion=CyanogenMod-6.1.0-vision
 endif
 
 #
