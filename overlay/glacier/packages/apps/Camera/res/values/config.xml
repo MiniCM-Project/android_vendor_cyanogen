@@ -24,5 +24,7 @@
 	<bool name="ffc_canFocus">false</bool>
 	<bool name="ffc_canZoom">false</bool>
 	<string name="ffc_supportedEffects">none,mono,sepia,negative,aqua</string>
+
+	<string name="filtered_pictureSizes">2592x1936</string>
 </resources>
 
