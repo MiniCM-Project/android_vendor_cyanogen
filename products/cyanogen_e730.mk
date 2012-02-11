@@ -18,7 +18,7 @@ PRODUCT_MANUFACTURER := LGE
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=lge_victor BUILD_ID=GRJ22 BUILD_FINGERPRINT=lge/lge_victor/victor:2.3.4/GRJ22/V10a-OCT-05-2011.2ED317DCA9:user/release-keys PRIVATE_BUILD_DESC="lge_victor-user 2.3.4 GRJ22 V10a-OCT-05-2011.2ED317DCA9 release-keys"
 
 # Extra e730 overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/e730
+PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/victor-common
 
 # Release name and versioning
 PRODUCT_RELEASE_NAME := OptimusSol
